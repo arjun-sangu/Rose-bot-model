@@ -137,6 +137,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
                      [InlineKeyboardButton("⭕️ JOIN MY GROUP ⭕️", url="https://t.me/NEW_MLM_HD_MOVES"),
                      [InlineKeyboardButton("⭕ UPDATE CHANNEL ⭕", url="https://t.me/mlm_movies_update"),
+                     [InlineKeyboardButton(text="➕ Add me to your group ➕", url="t.me/{}?startgroup=true".format(bot.username)) ]]))
     else:
         update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
 
