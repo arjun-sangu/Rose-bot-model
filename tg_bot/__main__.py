@@ -27,7 +27,7 @@ PM_START_TEXT = """
 """
 
 HELP_STRINGS = """
-**ഇവൻ വലിയ ശല്യമയല്ലോ..😬**
+**ഇവൻ വലിയ ശല്യമയല്ലോ**..😬
 
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
