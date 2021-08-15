@@ -135,9 +135,8 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                     [InlineKeyboardButton("⭕️ JOIN MY GROUP ⭕️", url="https://t.me/NEW_MLM_HD_MOVES"),
-                     [InlineKeyboardButton("⭕ UPDATE CHANNEL ⭕", url="https://t.me/mlm_movies_update"),
-                     [InlineKeyboardButton(text="➕ Add me to your group ➕", url="t.me/{}?startgroup=true".format(bot.username)) ]]))
+                     [InlineKeyboardButton("⭕️ JOIN MY GROUP ⭕️", url="https://t.me/NEW_MLM_HD_MOVES")],
+                     [InlineKeyboardButton("⭕ UPDATE CHANNEL ⭕", url="https://t.me/mlm_movies_update")],
     else:
         update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
 
